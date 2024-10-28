@@ -3,6 +3,7 @@
 [![Crates Version](https://img.shields.io/crates/v/autoclockspeed?style=for-the-badge)](https://crates.io/crates/autoclockspeed)
 [![Downloads](https://img.shields.io/crates/d/autoclockspeed?style=for-the-badge)](https://crates.io/crates/autoclockspeed)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jakeroggenbuck/auto-clock-speed?style=for-the-badge)
+![Commits since last release](https://img.shields.io/github/commits-since/jakeroggenbuck/auto-clock-speed/latest?style=for-the-badge)
 
 #### [ACS Upstream](https://github.com/jakeroggenbuck/auto-clock-speed) - [autoclockspeed.org](https://autoclockspeed.org) - [Our crates.io](https://crates.io/crates/autoclockspeed) - [ACS Github Org](https://github.com/autoclockspeed)
 
@@ -75,11 +76,12 @@ Auto clock speed has been tested to work on the following devices. If you have a
 | Thinkpad X230 | Working | |
 | Thinkpad X301 | Working | |
 | Thinkpad W540 | Working | |
+| ThinkPad X1 Carbon Gen 1 | Working | |
 | ThinkPad X1 Extreme Gen 1 | Working | |
 | Thinkpad P1 Gen 4 (Intel Core) | Working | |
 | Thinkpad P14 Gen 2 (AMD) | Mostly Working | See [#443](https://github.com/JakeRoggenbuck/auto-clock-speed/issues/443) |
 | OnePlus 9 Pro (Snapdragon 888 SoC) | Partially Working | Needs root access; compile from source through termux |
-| iPad Pro Gen 6 | Barely Working | Compiles with iSH, but cannot access any data |
+| iPad Pro Gen 6 | Borked | Compiles with iSH, but cannot access any data |
 
 
 ## In Action

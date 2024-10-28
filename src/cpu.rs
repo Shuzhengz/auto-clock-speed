@@ -1,3 +1,4 @@
+#![forbid(unsafe_code)]
 use efcl::{bold, color, Color};
 use rand::Rng;
 use std::fmt;
@@ -7,9 +8,9 @@ use std::path::Path;
 
 use crate::proc::ProcStat;
 
-use super::gov::Gov;
-use super::system::{calculate_cpu_percent, read_int, read_str};
-use super::Error;
+use crate::error::Error;
+use crate::gov::Gov;
+use crate::system::{calculate_cpu_percent, read_int, read_str};
 
 /// Any trait relating to a CPU Core
 pub trait Speed {

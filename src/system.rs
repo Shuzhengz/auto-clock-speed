@@ -1,3 +1,4 @@
+#![forbid(unsafe_code)]
 use cached::proc_macro::once;
 use std::fs::{self, read_dir};
 use std::path::Path;
@@ -5,11 +6,11 @@ use std::string::String;
 use std::{thread, time};
 
 use crate::cpu::Speed;
-use crate::debug;
 use crate::proc::{parse_proc_file, read_proc_stat_file, ProcStat};
+use log::debug;
 
-use super::cpu::CPU;
-use super::Error;
+use crate::cpu::CPU;
+use crate::error::Error;
 
 /// Find the average frequency of all cores
 ///
@@ -167,7 +168,6 @@ fn interpret_govs(governors_string: &mut String) -> Result<Vec<String>, Error> {
     let governors: Vec<String> = governors_string
         // Governors are in the file separated by a space
         .split(' ')
-        .into_iter()
         .map(|x| x.to_owned())
         .filter(|x| !x.is_empty())
         .collect();

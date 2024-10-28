@@ -1,5 +1,6 @@
+#![forbid(unsafe_code)]
+use crate::error::Error;
 use crate::sysfs;
-use crate::Error;
 use std::any::Any;
 use std::fs::read_dir;
 use std::path::{Path, PathBuf};
