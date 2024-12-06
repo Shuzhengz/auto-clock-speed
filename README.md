@@ -13,6 +13,15 @@ If you encounter any issues or bugs, please refer to the [wiki](https://github.c
 
 ![acs](https://user-images.githubusercontent.com/35516367/199084229-aee15ac5-bd86-41e9-b7fc-22517e21e6f0.png)
 
+## Quickstart
+```
+cargo install autoclockspeed
+```
+
+Now you can run `acs monit`.
+
+View [#install-latest-release](https://github.com/JakeRoggenbuck/auto-clock-speed?tab=readme-ov-file#install-latest-release) for more info.
+
 ## Goals
 - First and foremost, this is a project to learn about Rust and Linux
 - Secondly, try to improve upon AdnanHodzic's already amazing [auto-cpufreq](https://github.com/AdnanHodzic/auto-cpufreq)
@@ -46,7 +55,7 @@ If you have cargo on your machine, skip to step 3
    sudo cp ~/.cargo/bin/acs /usr/bin/acs
    ```
    
-   Note: If you recieve error `linker 'cc' not found`, then you need to install a C compiler (gcc, cmake, etc.) first.
+   Note: If you receive error `linker 'cc' not found`, then you need to install a C compiler (gcc, cmake, etc.) first.
    
 <hr>
 
@@ -70,7 +79,7 @@ Auto clock speed has been tested to work on the following devices. If you have a
 | ----------- | ------------- | ----- |
 | Dell XPS 13 9360 | Working | |
 | Dell Latitude 7480 | Working | |
-| Steam Deck | Working | Edit mode not neccessary (use built in governor switcher) |
+| Steam Deck | Working | Edit mode not necessary (use built in governor switcher) |
 | Thinkpad T400 | Working | |
 | Thinkpad T460 | Working | |
 | Thinkpad X230 | Working | |
